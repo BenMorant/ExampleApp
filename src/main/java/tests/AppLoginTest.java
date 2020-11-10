@@ -2,22 +2,14 @@ package tests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.fluentlenium.adapter.junit.FluentTest;
 import org.fluentlenium.core.annotation.Page;
 import org.junit.Test;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pages.FluentAppHomePage;
 import pages.FluentAppLoginPage;
 
 
-public class AppLoginTest extends FluentTest {
+public class AppLoginTest extends TestBase {
 
-  @Override
-  public WebDriver newWebDriver() {
-    return new ChromeDriver();
-  }
 
   @Page
   FluentAppLoginPage fluentAppLoginPage;
