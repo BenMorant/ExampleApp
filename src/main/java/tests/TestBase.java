@@ -11,7 +11,7 @@ public class TestBase extends FluentTest {
 
   public static WebDriver driver = null;
 
-
+//permet d'initialiser le driver chrome
   public void initialize() throws IOException {
 
     System
